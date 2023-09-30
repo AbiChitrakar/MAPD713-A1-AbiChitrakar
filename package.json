@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/AbiChitrakar/MAPD713-A1-AbiChitrakar#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "module_name": "^1.0.0",
+    "restify": "=11.1.0",
+    "save": "=2.9.0"
   }
 }
