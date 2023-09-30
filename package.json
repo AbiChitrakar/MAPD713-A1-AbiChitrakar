@@ -1,0 +1,22 @@
+{
+  "name": "mapd713-a1-abichitrakar",
+  "version": "1.0.0",
+  "description": "MAPD713-A1-AbiChitrakar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbiChitrakar/MAPD713-A1-AbiChitrakar.git"
+  },
+  "author": "Abi Chitrakar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbiChitrakar/MAPD713-A1-AbiChitrakar/issues"
+  },
+  "homepage": "https://github.com/AbiChitrakar/MAPD713-A1-AbiChitrakar#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
