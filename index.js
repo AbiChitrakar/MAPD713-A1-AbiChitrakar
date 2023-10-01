@@ -19,9 +19,6 @@ server.listen(PORT, HOST, function () {
   console.log("********************");
   console.log(" /products");
   console.log(" /products/:id");
-
-  console.log("Endpoints:");
-
   if (server.router && server.router.mounts) {
     server.router.mounts.forEach((route) => {
       console.log(
@@ -141,9 +138,12 @@ server.del("/products/:id", function (req, res, next) {
     // Delete all products
     productsSave.delete({}, function (error) {
       // If there are any errors, pass them to next in the correct format
-      if (error) return next(new Error(JSON.stringify(error.errors)));
-
-      // Send a 204 response (No Content) if successful
+      if (error) {
+        console.error(
+          `Error in DELETE /products: ${JSON.stringify(error.errors)}`
+        );
+        return next(new Error(JSON.stringify(error.errors)));
+      }
       res.send(204);
     });
   });
