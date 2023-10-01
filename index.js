@@ -69,10 +69,10 @@ server.get("/products", function (req, res, next) {
 });
 
 // GET: Retrieve a single product by its ID
-server.get("/products/:id", function (req, res, next) {
+server.get("/products/:_id", function (req, res, next) {
   console.log("GET /products/:id params=>" + JSON.stringify(req.params));
 
-  productsSave.findOne({ id: req.params.id }, function (error, product) {
+  productsSave.findOne({ _id: req.params._id }, function (error, product) {
     // If there are any errors, pass them to next in the correct format
     if (error) return next(new Error(JSON.stringify(error.errors)));
 
